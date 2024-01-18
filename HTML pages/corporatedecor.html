@@ -1,0 +1,288 @@
+<html>
+    <style>
+        .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  max-height: auto;
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-right: 40%;
+  margin-top: 2%;
+  font-size: 65px;
+}
+
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 6%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+    <body style="background-color: black;">
+        <div class="container">
+            <img src="https://media2.giphy.com/media/TxVVB6PfWMjE4/giphy.gif?cid=ecf05e47jtgbpzbyv6j0fpb2askv4d9lu3f6dkliistjvpde&rid=giphy.gif&ct=g" alt="Snow" style="width:100%; height: 100%;">
+            
+           <h1> <div class="top-left"><img style="width: 250px; height: 250px; background-color: black;"src="C:\Downloads\logo.png" alt="hmm"></div></h1>
+            <div class="top-right"><em>Decor</em></div>
+            
+            <div class="centered"><div class="slideshow-container">
+
+                <div class="mySlides fade">
+            
+                  <img src="https://www.bbblanc.com/wp-content/uploads/Corporate-Event-Staging-1.jpg" style="width: 800px; height: auto;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="https://i.pinimg.com/originals/1f/55/23/1f55233a7787baa4c0f91127085f0718.jpg" style="width:700px; height: auto;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="https://www.milestonemedia.in/wp-content/uploads/2015/02/1-Master17.jpg" style="width:800px; height: auto;">
+                  
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); 
+                }
+                </script>
+                </div>
+          </div><br><br>
+          <table border="6" width="80%" align="center" style="color: beige;">
+            <thead align="Center">
+                <th>
+                    <h2 align="center"> S.no </h2>
+                </th>
+                <th>
+                    <h2>Required</h2>
+                </th>
+                <th>
+                    <h2>Details</h2>
+                </th>
+                <th>
+                    <h2>Image</h2>
+                </th>
+            </thead>
+            <tr align="Center">
+                <td >
+                   <h2><b>1.</b></h2>
+                </td>
+                <td >
+                    <h2>Sound Systems</h2>
+                </td>
+                <td align="center">
+                    <ul >
+                        <li>
+                            <h2><b>i.Microphones</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>ii.Speakers</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>iii.Amplifiers</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>iv.Audio Mixers</b></h2>
+                        </li>
+                    </ul>
+                </td>
+                <td >
+<img style="width: 500px; height: auto;" src="https://www.becomesingers.com/wp-content/uploads/2021/02/Types-of-Sound-System-Speakers.jpg" alt="h">
+                </td>
+            </tr>
+             <tr align="Center">
+                <td >
+                   <h2><b>2.</b></h2>
+                </td>
+                <td >
+                    <h2>Lighting</h2>
+                </td>
+                <td align="Center">
+                    <ul type="circle">
+                        <li>
+                            <h2><b>i.LED Pixel Tubes</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>ii.Spot Lighting</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>iii.Led Uplifts</b></h2>
+                        </li>
+                    </ul>
+                </td>
+                <td >
+<img style="width: 500px; height: auto;" src="https://onewayeventproductions.com/wp-content/uploads/2020/03/tube-light-768x512.jpg" alt="k">
+                </td>
+            </tr>
+             <tr align="Center">
+                <td >
+                   <h2><b>3.</b></h2>
+                </td>
+                <td >
+                    <h2>Seating arrangements</h2>
+                </td>
+                <td align="center">
+                    <ul type="circle">
+                        <li>
+                            <h2><b>i.Theatre Style</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>ii.Conference/Board room Style</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>iii.U style</b></h2>
+                        </li>
+                         <li>
+                            <h2><b>iii.Cocktail style</b></h2>
+                        </li>
+                    </ul>
+                </td>
+                <td >
+<img style="width: 500px; height: auto;" src="https://www.tagvenue.com/blog/wp-content/uploads/2016/05/No-11-Cavendish-Square-Burdett-01-London-space-for-hire-e1563456137303.jpg" alt="k">
+                </td>
+            </tr>
+             <tr align="Center">
+                <td >
+                   <h2><b>4.</b></h2>
+                </td>
+                <td >
+                    <h2>Parking Facilities </h2>
+                </td>
+                <td align="Center">
+                    <ul type="circle">
+                        <li>
+                            <h2><b>i.Very Few</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>ii.50-250 Car Parking Slots</b></h2>
+                        </li>
+                        <li>
+                            <h2><b>iii.250+ Parking slots</b></h2>
+                        </li>
+                        
+                    </ul>
+                </td>
+                <td >
+<img style="width: 500px; height: auto;" src="https://i2-prod.mirror.co.uk/incoming/article1385694.ece/ALTERNATES/s615b/Car-Park.jpg" alt="k">
+                </td>
+            </tr>
+             
+        
+        </table>
+          <marquee style="margin-top: 2%; color: white; font-size: 20px;" behavior="alternate" align="center"> Contact us for details about price and availability </marquee>
+    <footer style="background-color:black; height:300px; text-align: center; font-size: 20px;">
+     <p style=" color: white; margin-top: 5%;"><b> Head Office Address :</b> #000, 2nd lane, Some street, <br>        7th stage, some locality, Bangalore<br>Karnataka, India<br><b> Contact :</b> 1234567890 / 26784729424<br>
+     <b>Mail ID :</b> itisarandommailid@gmail.com<br>
+   <b> Follow us :</b><br><a href="https://www.instagram.com"> <img style="width:30px; height:30px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="insta"></a>
+     <br><a href="https://www.facebook.com/?stype=lo&jlou=AfeABX73zr98eHAWo0l9Gb9fyy7crT1jChpE7u5k-HCs19ZCkddqFZSYKkH3OU1i9toF9kjY3Fx5qKfy0nMhrj0PrCq-4GLkQmFYbNiH5BR-WQ&smuh=58581&lh=Ac_oesDW-vVhLAlcAbg"><img style="width:30px; height:30px;" src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-5.png" alt="fb"></a> </p>
+   </footer>
+    </body>
+</html>

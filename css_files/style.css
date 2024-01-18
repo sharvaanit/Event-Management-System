@@ -1,0 +1,160 @@
+*{
+margin:0;
+padding:0;
+font-family:Lucida;
+}
+
+header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../bg.jpg);
+height:450px;
+background-size:cover;
+background-position:center;
+}
+
+.main ul{
+float:right;
+list-style-type:none;
+margin-top:25px;
+}
+
+.main ul li{
+display:inline-block;
+}
+
+.main ul li a{
+text-decoration:none;
+color:#fff;
+padding:5px 20px;
+border: 1px solid transparent;
+transition: 0.6s ease;
+}
+
+.main ul li a:hover{
+background-color:#800080;
+color:	#fff
+}
+
+.main{
+max-width:1200px;
+margin:auto;
+}
+
+ul li.active a{
+background-color:#800080;
+color:	#fff
+
+}
+
+.title{
+position:absolute;
+top:25%;
+left:40%;
+transform:translate(-50%,-50%);
+}
+
+.title h1{
+color:#fff;
+font-size:100px;
+}
+
+.titl{
+position:absolute;
+top:37%;
+left:55%;
+transform:translate(-50%,-50%);
+}
+.titl h2{
+color:#fff;
+font-size:60px;
+}
+
+.filter h2{
+color:#37A398;
+border: 2px solid #fff;
+padding:10px 20px;
+background:#0B1211;
+box-shadow:0 20px 15px rgba(32,32,32,.3);
+}
+body{
+background-color:#F0116C;
+}
+
+table{
+position:absolute;
+z-index:1;
+top:140%;
+left:50%;
+transform:translate(-50%,-50%);
+width:60%;
+height:650px;
+text-align:center;
+background:#7FE0CA;
+box-shadow:0 20px 15px rgba(32,32,32,.3);
+border-radius:12px 12px 12px 12px;
+}
+
+
+th{
+padding: 15px 18px;
+background:#EE91B4;
+}
+th:nth-child(1){
+background:#0B1211;
+color:#37A398;
+border-radius:12px 12px 12px 12px;
+border-collapse:collapse;
+}
+th:nth-child(2){
+border-radius:12px 12px 12px 12px;
+}
+.sumo h2{
+position:absolute;
+top:200%;
+color:#37A398;
+border: 2px solid #fff;
+width:100%;
+padding:10px 20px;
+background:#0B1211;
+box-shadow:0 20px 15px rgba(32,32,32,.3);
+}
+
+.social{
+position:absolute;
+top:80%;
+left:30%;
+}
+
+.social ul li{
+display:inline-block;
+height:30px;
+}
+
+.contact{
+position:absolute;
+top:70%;
+left:10%;
+}
+
+.sup h2{
+position:absolute;
+top:70%;
+left:5%;
+}
+
+.wassup{
+position:absolute;
+top:75%;
+left:10%;
+}
+
+.list{
+position:absolute;
+top:75%;
+left:5%;
+text-decoration:none;
+padding:10px 25px;
+}
+
+.zup{
+padding:20px 25px;
+}

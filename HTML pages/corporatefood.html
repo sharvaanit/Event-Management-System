@@ -1,0 +1,508 @@
+<html>
+    <style>
+        .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  max-height: auto;
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-right: 34%;
+  margin-top: 5%;
+  font-size: 55px;
+}
+
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 6%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+    <body style="background-color: black;">
+        <div class="container">
+            <img src="https://media2.giphy.com/media/TxVVB6PfWMjE4/giphy.gif?cid=ecf05e47jtgbpzbyv6j0fpb2askv4d9lu3f6dkliistjvpde&rid=giphy.gif&ct=g" alt="Snow" style="width:100%; height: 100%;">
+            
+           <h1> <div class="top-left"><img style="width: 250px; height: 250px; background-color: black;"src="C:\Downloads\logo.png" alt="hmm"></div></h1>
+            <div class="top-right"><em>Food Menu</em></div>
+            
+            <div class="centered"><div class="slideshow-container">
+
+                <div class="mySlides fade">
+            
+                  <img src="https://ak.picdn.net/shutterstock/videos/19149286/thumb/1.jpg" style="width: 700px; height: auto;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" style="width:700px; height: auto;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="https://c1.wallpaperflare.com/preview/43/130/490/buffet-dining-dinner-lunch.jpg" style="width:700px; height: auto;">
+                  
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); 
+                }
+                </script>
+                </div>
+          </div>
+          <div>
+            <h1 align="center" style="font-size:35px; font-family:Papyrus; color: beige;"><u>Appetizers</u></h1>
+            <br></br>
+            <table border="6" width="80%" align="center" style="color: beige;">
+                <thead align="Center">
+                    <th>
+                        <h2 align="center"> S.no </h2>
+                    </th>
+                    <th>
+                        <h2>Name</h2>
+                    </th>
+                    <th>
+                        <h2>Details</h2>
+                    </th>
+                    <th>
+                        <h2>Image</h2>
+                    </th>
+                </thead>
+                <tr align="Center">
+                    <td >
+                       <h2><b>1.</b></h2>
+                    </td>
+                    <td >
+                        <h2> South indian breakfast Combo</h2>
+                    </td>
+                    <td align="center">
+                        <ul >
+                            <li>
+                                <h2><b>i.Idli/Vada</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Dosa Varieties</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Rice Based</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img src="https://www.chezshuchi.com/images/south-indian-platter1.JPG" height="250px" width="250px"></img>
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>2.</b></h2>
+                    </td>
+                    <td >
+                        <h2>North Indian Breakfast Combo </h2>
+                    </td>
+                    <td align="Center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Plain Paratha</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Stuffed Paratha Varieties</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Chapathi/Puri</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/52/9b/b6/north-indian-spread-at.jpg" height="250px" width="250px"></img>
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>3.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Chinese Breakfast Combo</h2>
+                    </td>
+                    <td align="center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Momos Veg/N.Veg</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Hakka Noodles</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Rolls</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img src="https://www.chinadaily.com.cn/business/img/attachement/jpg/site1/20120627/0023ae606c3e1154bf3218.jpg" height="250px" width="250px"></img>
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>4.</b></h2>
+                    </td>
+                    <td >
+                        <h2>All American </h2>
+                    </td>
+                    <td align="Center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Hotdogs</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Pancakes</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Bread+Omelette</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img src="https://as2.ftcdn.net/jpg/02/81/21/29/500_F_281212918_tvTpaoUx0bAKg44RJCTy3hcRrAwqwEdg.jpg" height="250px" width="250px"></img>
+                    </td>
+                </tr>
+                 
+                </table>
+                <br></br>
+                <h1 style="font-size:35px; font-family:Papyrus;"align="center" style="color: beige;"><u>Non Veg</u></h1>
+                <br></br>
+                    <table border="6" width="80%" align="center" style="color: beige;">
+                <thead align="Center">
+                    <th>
+                        <h2 align="center"> S.no </h2>
+                    </th>
+                    <th>
+                        <h2>Name</h2>
+                    </th>
+                    <th>
+                        <h2>Details</h2>
+                    </th>
+                    <th>
+                        <h2>Image</h2>
+                    </th>
+                </thead>
+                <tr align="Center">
+                    <td >
+                       <h2><b>1.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Non Veg Gravy</h2>
+                    </td>
+                    <td align="center">
+                        <ul >
+                            <li>
+                                <h2><b>i.Chicken</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Mutton</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Fish</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iv.Others</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img style="width: 200px; height: auto;"src="https://lh3.googleusercontent.com/proxy/D322OfnF_b4JdJbswlK2B4mfWIUZKaDDl0NWBAFMXxVZ9XliGXmlYCLvXkdKynlNgu-4_oE7RmBirS2cX9cQL0jfykV4tIwrNom0j8_p9IO5TMIUQrO22Lr1tTTSLgfcRzbMN8EVYUGU" alt="hmm">
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>2.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Starters </h2>
+                    </td>
+                    <td align="Center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Chicken Kabab</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Tandoori</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.chilli chicken</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img style="width: 400px; height: auto;" src="https://c.ndtvimg.com/2020-04/6vslovro_kebab_625x300_15_April_20.jpg" alt="hh">
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>3.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Gravies</h2>
+                    </td>
+                    <td align="center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Paneer Butter Masala</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Palak Paneer</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Mushroom gravy</b></h2>
+                            </li>
+                             <li>
+                                <h2><b>iii.Paneer Tikka Masala</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGCBMVExcVFRMXFxcZGxoaFxkaGxkaGhoaGRoaGRkhFxsaHysjGhwoIRoZJTUkKCwuMjIyGSE3PDczOysxMi4BCwsLDw4PHRERHS4pIyk0MTszMTIxLjExNjExMTExNjExMzExMTMxMTE5NDMzMTExMTExMTExMTExMS4xMTExMv/AABEIANQA7gMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgABB//EAD8QAAECAwYDBgQEBQMEAwAAAAECEQADIQQFEjFBUSJhcRMygZGhsQZCwfAjUtHhFGJygvEzkqIHJGPCNFPi/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAMCBAUBBv/EAC4RAAICAQQBAgYBBAMBAAAAAAECABEDBBIhMUFRYRMUIjJxkfCBobHRQsHhI//aAAwDAQACEQMRAD8A+UJEWJERSIuSIjJSSBFyBEEiLkCOSUkhMXy0xBAi+WmOGEmhMXIERQIuSIJKSQmLAItsFkmTCyElW+w/qJoB1g6YmyyR+LM7VQ+SWWSP6lnPwiMOoBKQSWSCScgA58hDFFxzz3kpljeYoJ9DX0hba/i5YdNnliUnXAG/3Lz84CE20zBiJUonLbzNDHDwLM6DfAj6ZdclPftKH2Qkr9ymKTZLHrMnK6JQj3eAbPd0zvLUkbgu3uIZ2VcmXmiWvkx/WEtqUXzHrgZvEEmWexfknH++W/lgiH8JYzTsrQP7kn/0h2b8kBNJSR0oYpm/ESDwmWlaeZV6giODVKfX9QbAV7/zFpueynJc5H9UtxWuYaKFfDSV/wCnaJSj+VTpV+ghiL3knKUU/wBIB9lCLUXjJVwrP+8H2WFD1jq6kSBxRDaPh60yw5lFSdVJ4h5iATLIzDHyjdowI4kLUjpiYeIxD2idtMtQT2glTkq7qqJW+tRr1eHLmU8yDYyO5gkpjimNTafh6Wv/AEJhSr/65lD/AGqyPjCK22KZKVhmIUg8x7biJhgepAioEURFSIIaIKTE5yDFEQUmCSmIKTBOQYpiCkwQUxWpMSE5BymIlMXlMVkRISJlKRFqBEUCLUCFScmkRagRBAi9Ajk7JoEEIEVIEE2SSqYoIQkqUcgIDOidLD5Q3l2OXKGK0EuaplJPGf6z8g9YjPtUqyDDLIXPyK80o5Sxqr+aFcqyTJpK5hISaknNVfX7rHDQG5jQgCSdqizL7wvmdN/ClpCUOwQgEJ8WqswPZ7l1nLr+QMT4/Knxc8oPE5EtOGWnCMirNShzP0DDrnEJFmmTKCgPXKKOXWVwvA9Zew6O+X5PpLMMiW2FKX8y/Img8AIgbwUoshPjDKx/DwFVkqJNNW89IZpsRQoBCU4SwqH15xmvqVJ5N/nqaKYABQFTLrs89aTw7sCXf3j2RdE5SQSyTqmlD4ZxtexAOWegH3TfrHLlhiQyujZHJiPeFfNN4Ak/hCY5Xw/NfiKmO2g1f9IpTcCn75c6O/8AmNTetoRLZAUpKlUSAWDM5Kq1PSteUByZZQ0wMyuErJIwMWD01INfOHrlyFbuUcjoH2kddxCbonJf9I8SZqWxSsXo3Vv3jYXetcxI7qmcOcyzZ+cWLsbucLA+IHMVy1hXzJumAlpcSlQVmUs14S9CUK8oN7VK++Er5jhV5jPxg62XVLWCwBFXbo31jP2u5lIHAouOY1NHhmN0JtSQZJk4oi4/kAYQEkkaYu9XnkfTpBKZowdnMSJiNUKcN/Qc0GMX/FTpZ6UNfoc/KH923iJiQ9aCj8Q/pOo5GLqZmTluvUf9yhlwA/b+pXelwUMyQStAzQf9RHUfMOYhFhjXSppSQpKqPRQox2VseR9YnbLul2kEpCZc7NskzP0VF/HlDCUHQgzGKTFakwbarOpCilSSlQoQcxA6hDoswZSYrUIJUIqWIkJGDKEQIi9SYgREpGDJEWpEQQIuQITGSaBFyRFaRFiYJ2EWOSqYpKEB1KLACHk1YkJMqVxzFUmTBVz+RGydzrFlksxkoEtA/Hmji/8AFLOj6KIzi/sk2YbzT/x//XtEWYKLMmqFjQiiTd+DjmsVD5fpHsy0LmcKQ/IZDZ4sWvtFBALElnJ1zYblnh9Y7ImUnhGJTO2pPU+8Y+q1ZJ5/oJrabTBBx35MAu66A2Jbk0pSj+m+UPrLIY0ACWo+cdY5yWGJLtmHqH0pmM49t80hIUTQB2LnKMrJkZzzLoAWXS7HLxJWqeoOGCQFFI6sKmvtHWyVLJDKUcPdPGK9APeF93XyrFUMAWGI7gGg00hqu8UniKyC7NnnoHpvEMjOCARIKbNqbH89oKhJIKSpgaM9XL7ZAtyge7JCJbspSlOSxbSnnSGEu8ZSgQtKPIDKPZSLPOICU4CrXMYsw4JpB8RgCD1JHu2Bia+kyQy3KlqCkgvVsy+gAb1jy4lBUtUtZxIACgTm5AfxBUfsRb8U3ZgSFYsR/lJoDqUgVhVJtZTwkJMsgAt3mD5Hep9ovYwXxUvcy82XHjz7ieK9O7jwy0S1shCmWxIA7u9djWgic9eEjiGImiUjIDIkQTZJiZiQZZzJbTC2bjTxhakS1zqOQKA1qd6aRVaz9w67mph2EWvXtLpgdiAquziulBlzhdek2bLl9p2ZbEBxDCdQXBDlqVh8uaJRQlSMSjiLEtTlucotMjGVFykKcHCAwJGr1P7mIY8m1gWHEMj2KX9zLzbJLmpCgwJD9YRTrBMlHEh2GhjXLseAhGFsJJFKeDaR5bkJ7qtWr5bxbTPRode8iU3DmILBeTnPiyUDkobKGvWHEkgjEh2HeTqg8jqnn4Hmkve6yk4kZisRu+3nQ4SOE+NCDyMXcWQAWvXkStlxBuD34M09tsqLWjCSEzkjgUaBYGiufOMXapCkKKVAggsQcwRGplTQoBSabh6pPLcbGJ37Zf4mUZqR+LLHGBmtA15kez8o1cWQOK/UyMuMqZi1CKlCLjEViLIiIOsRSRBCxFShHZyDJEWoiKYsQIXGSYEaD4WsWc9aXCO4DkqZp1AzhLZJJWpKUhyogDqY39hsYBEsH8KQGJ/NMIdT9IiZ2RkJEiUqbM4psyrkeLB9B9QIzpWuYujkqLk5wZfVo7RTknAmiR4/5g24LIBxHvOfBoytdqQoqaejwG9xltmu9MtAZsYcpUQ7KbOGViSGZSQ6vmIL1ND5+8DTsCCqjYi/VmqNs49DEBQXwmj1PPpGGzM3JmoNnV8wi3SUS0qXiBQA7600BBr1hZLlCegLJVmXBLgAHYikFJtqFHAzluqSNQRuYvlyZfynCguKDhJzq3lEh9I6IMXS5OyCICi7OJyvENMwW0dlM3hEv4dDkd06UhxZ3CCCVJcEHCkOFAnNxRqBhC5cgJWFOCpSeIqZTMHAwqDB6Gg1gDluWMMSLjsIKinsVJxBnffUa9ekE2FcxS0EKIQF5HwoB0gu0SkqKiOvDQVrrTXIZNCqy2ScjurK1PjPJ9NqeUMsMDyLlneY8+OLWnsDhJGpbPMBgT1jGWXswkTEoZRo7DEehNWctGltUpUwOvu5KDZk9fWFlnuwialSQcKD3WBcM9S2bsfCHafMqKR5/nEy9ToDkZaPHmG2JK5cosTxtiADOlqA+By1j2w29EkqExKhi+YDuk5MBpDWWsEZNyy/zAK1LxELSlSA9dWer+nlCPibyd3MuY8a402qKEptuK0TErlrC2GEgs7DrrGpsE+XLlhD4iBydx9eUIbJZZRU8sh0mrOwPPnWClhzQh9uu8Kck0o6HrA41cS63KSrYNzL1hda5WqgHoAQz8/XlBUw1pmM6v57RBQNH8T+kcX6RGAV1BQy0kYgWLUrozGM9fd3lCsaGfM8xzjSSEJcswJqW1P1im0yQoMS50eLGPJsbiLK2OZm7NbmZQ3ZQ+hjQ2G1YFJWk/uIyd4yDLmEtwqzGx3hndE35CaHu8uXhGtifbVdGZ+ox3+RJ/Fd3CXMEyWPwprqTsFfMnluOR5QjVG3ssrt5K5CmB70vksOzbVp0JjEzEkEghiKHkY2EbctzIYbTUoWIqUIvXFShE5GCoEXIilEWJVCY2an4LsrKmTyHEocPNaqCHt4zOykCW9VVUdyaqiu5ZXZ2WUk0KzjU+u3lT1gO95xWsnQUHhn6wvI1LcZjW2AgFkLqxKBwIqdddhGlssyWkghgCkV0I0O+sAXFLAS9a9GguVZe+VVGI4avSmwprSseX1OQZGNzfwoQKhV4ypc1L1ABIS1TpXpCe1q7GUQpZIWWG9aOMPnBNsmmWvFiSUYQEo+bFueQpCe8pqlcSgpQGSRVn99PKDAhJA8SOVVVSa5rvzGVyoSvuKBUAQKNmQTRswwFNzErLeSjMKFsHJYvuOEdABSFl1W0haRLlkEfMSzDMltq+ghnZJAmzgpTOksQKcRFD7Q/NtFg+kzNKmRX3JdXzfH9J7eVvOHGS7FixoAxZmNf3EUXda1cSnxFmG2wy5mBL4sYlzGSCEkVBqHGZ+2zg65kqQUkB+IFJbYU0Fa+kQKoqXNDezNUMkpZIUVKJUwLjDXIDnBFssyUtjUUkbEMNSOdT7QHe1kWuWpIyLF05gguC45iJot3aiXIUAteIFROQSpJSl9GofSEhL5v8xuR3RCVF1C0qdSaBeKoHTno7wXNTMQQ4SNXBLb6/e8A2i6zZ1JUkKWMQJI1ehoMukaNFmNolY3SkB6kEcOjvmIQVsjbzONlChWPR7ibsXdSGGw/M4J4eULbRaULVgVhINClq7/AE9IbqWhCilPdBAoSMh8uz/WFi7vxKxqoS5YF6Aa0qd+sTx12Y0EH7up7dtj7JUxh3i4Gjsx6ZQSlVXI6/oNY8QpqYg+zx5aLRgQpRGLDXPPpBuZ2s+ZHaEWI72v0JUUI7wNaEO2WQI84hZr57xUlZSQKMBhGTBi5zeF162xKyVIlBJVXEoJUquopQtHgxos+LBiBJL1oBQN6xqDToEFjv3mN81lbIQrXwT16R7YLBKC8Uty+SsW7GtG2qYKmgB9QMjpy1jPfCtrZRQpRwnk4HUEsRvGjCGyZm+6xU1ClGomzNTS5Bkxhqr2iq+LIJiSW9IztlKhTVJ9v2jZzVPw1jK3rJ7OaFb5jn9+8P0zn7TDMnFzQ3daGKJg1z+sL/jSyBE/tE92aMY65K9a/wB0Su1bJKdHCh0g34hR2lkQtqylMf6VfTKNvSZNwqYmqx7TMeoRUuLjFShF2VYEIvsMorWlH5iB9TA4MNvhWXitMobKfyBhB6jR3N1a5RVwh2QAKcmEKJyEmUSknEFYW0r4bkxpJUsizzFfmWyegBBO+Z9IyS7MStJLhJJY7sD6VzhOsYJjr2j9IpZ795oLAEpQEpDbgCKb0tC0qCEZ6nPOn30gSVLUhmXQZcv1MNrtupMw45yiynYFySTQEg/LHltqq25jN9+FmfvNUtBbtAThdTVc61GUDWezTJ5CSpSEUrqwbujWNNeVxS0LUMIBblhJzcAxCzjs1oUWLFj5ela+EP8AjhRS9wRQRu7gakJlJqBTXIn9oGui1BUw4cwzgEOc8t2/WNDe9mGBwpJdwwI66GojOS7OqUsLCQCkEKzCiH0fX9IjiKsp3dmLyq71sNCMjfICsC0YsPiksMnNfEbaxehYVo46h9Tp5NCjAe0MxXElXEDViORam1WyhxdXcxFLciQ9Onj5xHIoUfTI43+qm7nLEwcKUp8XBwvX3MLgrsppLDCopBDaAvU7Vi62W+ZxYU4cmoC4J+Znby08g7VxqABwkA4k54hm4PlElRq56jkyq91N/PCJkl3Adm5PUMRlvSF0lNpQjsgrhACXAOJi7Z5wl+Gb8TiVIUaoZzmz502yLiG1q+JpUoKQouUu6jrq7eMIGN1fbz/uVCCtgCxcSpltMWhYNAxbNuVczE7NakywhBUVNiIAwuxYDFroHbcwgtt5CdNUtKlVLBtmpTTocoa3FZUqQVpTizJLd3qN4svjbGoZv17x6Z8WbgEWIQiwpM3tC+WXM/ftBFpmJSCTipkAHfSg8YjJUUsDU9KEUi3E4BUoJYkt+YVLZxWJLMLMebImbtFxzXUEGimYqLqqXL16DWGtz3f2SezWrFq2QrnTzhwg4k4iBhyd33y8opRbZaVh1JAaqldNH156Q1tRlcbT1KyabGh3KOYDYbtly3wJFSCBoNKctfGJWlbHujIAkk18oezgJgxS1JViUAcJSWUBwl9HyPURlJqVLSpy6agBQZSSCxBfIiscG56ZozFtqloe0OlrDEkktvlrQPpyhF8TWfEMbVHd8388oZyJWBISoghqCpyy3bOBLxS6FJq9fXX0huI7XsGTcWvMAuuaCkF8qHoY0l1I7SVNln50KHiAW9cMZb4dTiTh1qPKo9o1Xw4v8QDcv51jY0jbXI9DMfWLYB9phZgaKlQbeyMM1adlqHkTARjYMy4vTD34N/8AkA7JWfSEIMOvg9X/AHA5pV7Qgxo7n060y8Nil86nqolUZias8KQkfhpKSNSCtKgwelaxrb4UP4RDUpLbyjJfw5PaTBUKZ/DDVJ1qTToYq60fST7SzoiN4v1hFy2cr4lgM+hJc7NoMv2h0qbwlShkdGo0Zq77WZSmYsS+42jQ22eMIZg9anSPKZ1bf7HqegINiHWhXbICgQlQdPEaK1A9xCNctWbpYmlMm09o8m2kpdSsKZbVJI9Rtzi20AtiHdzBpxMAQzEirxIKanFUJx+pRbZS0pUQA5zAoCebRFjMSAoCmpIdmbx/aJomE1UMPVvDpFBX2TksU+Rrt6xIX0O5L8wC8JUxP4aFH8Qig6uSkfWGFltIlolhQowxEDu0zO9Ul+hMCWafNnqBcpQmgbMg89QaiKLxnDtqHCQlq6lQIqNRTwcxbUbqRuxyZn5yyEuvN0KjC32DtSpYKSKMqhFOYPXppFtlsDS0qdiQ27YaDwp6xGxLUhGFYorLfu0xNrp9dr1JSqUoIBQ6e8CxSW0/zCWZvtviNxY6/wDpVEyoXZLBM0LCFMxLDxBDZawDaJnZIUtRK3dyE5kgsS+mXLOL7ms84JUJgBALB3OJnqVbVprTnE7XYZcx0u+HMZN8wbTKDdtbaxsDyPSM+5bHF+sRzLQgS0gFICmxFDOVVcGgIDhmjQXGsmWkgsAVEt8xJLPWufoNoV2eySFLIBdVQ4q4AqX0GYf9ob2aUlACAADVh15tn7xY1OYMm0CpQ0mk25Dk3X3CJgQo1oczXbJwM/aALchZUCzs+EjmGNPvODsaXICS7VOnnrHJSdNOesZ6krNW6gVinLTRVAaDlmCaZ5wZYrGshKsTDE53LOWqMjAipZXMbQHp1HKGongpSACkDo782zgysfEHahPZRAUVJZJP/JjUKIzBzd3FGgK/EhNC6MR0zc686vl7VixaFYsQNDod+R09YjaLcshyEnCCMODFiBOSiaNs+8M05G4Bjx/iUs5baWUc+ky1qWtJwhRIFQcJ8csuvpDecQZaSUs4pu7DIecDJkhU3v4Q9AlxxaDM7awXagQCCvQNRotZWFgCGlQ0W5A9D4/EztyD/uANl/V41N08M0clEe4jJXXMAn4iaBZMau6STOfTET7xp4L+J/QSlqCKr3ma+KUtaZo/nP6wqMM/idT2maf5zCwxsmZcWw4+EltaZXMt5woEE3TMwzpatlD1p9YQY0dz6xfCFGyyyMgkP/bT6mFBmDspQD8SlY+bl26cKY0li/Es6kDJlgU/M6012ZvMRkZzhIyGFYps9CXyhWrBbExHpG6U7cgHvJTksTRzp++0SmWlSwEYC7UfJuUSUVFnASo5jMM/rHXesk8SAk/KHemn+I8v4sjqeoUym02Bc7AhSSkCiqBlO2/9I5w7tstFnkoSQWSaHMlTfpTYMNoayi6AaGMBeV4rmzyFu7kIQaYRpTc0g07PnO08KO5m6zVHGNyjnofmMJ08LYJJANUqADprqN8w3KJ3rZyohIGIEuS5yHWI3EAuWCEqdycj6biGBlqSfd/Or+Mdc7HoeLlrC3xMYY+QJ5ZkJSAlLMMvERaqwiY+MUJpTUNlzBi67pAUAolxoBWo+kNkgNm2wim2QhuO512C8TP22yKlnCsE1oTR9KiteYiFiTMJIKydEpyI1zHjGptBRMQQohJAqqjU/Nq2sZy1XelKioKcKDirjw5UPpFkMGEVjyE8HuFyQ6SMzR9HbZs2eAL0kBSVIC8CyHBGeYej1H6xdInYcTmvkrkxhV8WXgjAkBPEpzzwgOoGuTt5wYULZBUNQ23GSRxL7qkSZIdS0KWcgKkDVqnaGKrOyXSCdRi0fZ6xjrtWgIxJAwK0IDpIzAIqPONP8PS8T4FpNCcNQotpUEUzfOLWfDwTfMoYNSUdce0Afn183PUqJU6iQBpv98ohb70lSA5AKjkC4fyq0e3rP7MthUSa8IduoFW8ISmbKmgGYFCqgQoYTQ0oR0ivix7qZhx7TUdh0O4/uu0InIokBblTCj0yBeJy1JBYHC1CFAlzlm9PKM98PWoY1dmpJCVMQ+XXfWGs61pVNYr4jrmSeo6GDLhpiAJFGU/ce4dPUNFdaQFeKT2ZCEndy7+R9zEhNXjCQl83JNT+0W2ien5wUtlmfQQpVKkEcxpxgihFd1Wco4lNUVIBLnk1Yut1pcBPjpTw0i2ZaZbuOItTav1gO9JqUylKCcLO/lvFgEs9kdw2qi0OhM7YklSyf5lH/lGz+G0cT1yPrT6xmbkksAdft41dgOBExZ0H0Kv/AFja0/LmYWpFTEXwvFOmHdavcwETFk1Tudc/OKlGNa5nQBMS6R4mJphUZPsXwNNEyUCNUo6un9iiF18WEhcxI1ql8q1Dwr/6ZXjheWTkf+Jd/wBf7I2vxFZnSJg0DH784CAy7TOg7X3THTLQjAlSiATwgkMysumYMRsUlYAxTMSg5xs3pEb5mGUVEIxBxopi4dxSm+X6x1ktXaMvCQ/DhVw5b6P7x5rPhbHYri56PT51YA+YwVbl5FSUow6jicnnkMoRrupImmYCVEqSpNG4s1edTDC2WYKwqSshSXY5irAgg0OQiq0qU1CXGftTaEYzt+01fcsPhxv9w6NiaOyCXgTw4lEEqJKgAN6GkB2q3pUlYwBvlYqOF9QSXBPJo67UGZJKkE4TwkgOcLO2dAdaQ1sl2yQkHM/zHUPpCPtu4ksik3ZmfsN7izFKVhTKHE7Eh68Wrj1feHZ7NaSpB71XxZ/01YQHfFymYlTlIeoIFaPGcuidNs66AKlHNBFQXzQX9IZsGVLU03p6zhG42sI+IZs4LKCpOAjJQcEgVAYhqB/OLbnvOZaQJUyWChAAHytSmT4sjkW5xO8JInzErSnEmoCe6oFjUE5Kr6QXYbOiS5QMK1ZmpyfXQZw45UXDtr6pR+TyfMDIDx5FyE1aDNWCK0YZYRrt7Quvuyy5hAQ6SAUkZtiY0bkOlYZTkPx5l/b6RTKmDtMLgKbFpk7dc/vKFJkIO4dzQyY1ZdrdRd8L3YjAZcxPEtLnOiqZPQKZh4Q+uizy5RNSSlwCe8Acstsn8IXJtIRPSoigVVndjSghl2C0rJBdChkxCh1GnUR18jM1seDzIJgxgAV0OITb7JjdZYkJzZIyd2bTKnKM8uUkgjV83O7V8hGqsEsVAUya4Qrzd1eTxmb4kKQtSaMHI1NW18Yil3VyS0bWJu2QhwhKyX4lBgg6kkOcRJeICd2au0l1WxLKZITzAerCO/ijLUUKQClVXIcPQVfwiN5W+ShUshAAUxYPhdg7g1GvMc42EqhxdzCzY8r5Gs8jrihXt7wi7rfNxMQ7g4lEuRkzDLU+kPFMzLd9A41HzbCIWWWEJfCCNNuUezMNKCu36/eUZeV1Z7Aqb2lxtjxhWNwcoBLAGm3L1MBfE03hSh60B8KmGCZyUqzdno9fLWEFqmmZNJIbDTzOvPKG4UJcE9CGZxREYXUnIecM/iKd2VlIyK6f7j9ACfGKbjs+JYH2N4XfG1txzEoGSQ/mGT4hIHnG3pMdC5hap7YzPkxBUcTECYvyjA3iYMUAxagxCMjW4rcZU5Kn5H72+jx9luu0JmyGd+FvSniMuoMfB3j6B/08vrKWouU+v7lvMHeCHcLvFJQtKlP+GRQVBCXIoaan21gK9rIZktRll3WFCvdydLtoCfONB8US+JK0sQR4NnTdoRC8MKgpjhSGUNG38PZozddiP3r2JoaPJ/xMvlJKQlLVYYh4esC2onQZljvB8xAbEitHod/GA7SFU9uXWMFTzN0ciaH4HVwlJI4QTw0zJZ6ZiHJQkDEpiCcwOYbKnj1hB8FBysFqAmuVcofrtMpSGxh0s5FAKOW3rEWHczs4PxTV+Isvq2lPCUDMM7Cmp50jN3mFIbCytAQHcCqm8PukaJKjOWQpZDME8KSk6kh9a6v6QRZ7FLQoJXhVqhyogUY/MXNTVhrQQYyo5P8APzHBwi7a5mSTawkgpXxOHDaVy6RK8LySMKEMVqPEBUhLF3b7MWquyYiYpsJJcvmNnDRXYkolqdagQ9FYXIfMk55nIZDfR4VLv0EhnysFAXmzUJQt0PUggkaHy1/aKVTMiNmScyB9YbrkgJBlgTEjuuxHNjXpFATLmE8CkqAfC4cl8IA/KXPSEAc1UsDIJlLYkhYLnGSSDkGf2Mbi57Oq0SkrBdQYFKmcEUGGnvGWtstKVlLYkn/iWrVg4flDr4MtKiShKiFOGqwpXzixk5AsdekjlsLuXgxnbJc6WoJYJfJ6JzIzem7GF9okqmApWllo9d679frGyv6QFyykAB96dK5ECsZOapXaAkhRIALPnXPnC8uP4TUOorTZTkF0LiZMhKxhUgKyBpXhcj39oFvK5kLWg4KJJKQCPEA7fpDS8kqE1SkjCFVI6uCA3MZNAdvtgSh1fK2LXVsokrOGG0y3tVxZEuQtOCiSkNRObV1yMCS56lLUkoIQk0U4ZT7DMDqIMmzzgYMXZ6V3pz/WAZxUJZWkBTHJRKW/URxBd8TrmhcpvRpKCqhWoMnUh6s+2sKrEhgMyczv/kmPbXaVTV4jkKJ/XlDe4rHiOJRASmqlHKmfgPfpGlp8RrnvzMvPlF8RjIaVJK1UcF/6RVR8aDxjB2m0GYtS1ZqLw7+Mb1xHs00diobJHcSefzHrGdSY2sSbRMfI1mTUYrUY5RiBMMi4GDFgMUoMWJMQk5Y8E2K1KlrC0nLPn9+4ECJMSgnRPrV0W1FqkCtdOStDyBOmhcQgvOQpCjoRmPr0jL/Dt8Ks8wF+A94e+Wm8fRZwRaZYmIIxAU/RW/WE5E3CjG432mxEN1WwyyEqUAlxmOdRTLl4wxtaBUgkguRkRCi2WUgmhB1H3pA9jt65ZCVOpBoRUlPMcoxM+lIax3NvT5wwmp+EGealSmSoM5fMsKbZZDaLbbgsysBWVBWau6EUOajR+WdcoW2SatKMUopUFHNnbkRAlpmrUPxFkjNgHJL6/bRU2hmNx7KdxYHia9VollCVoYJSAAGDvu7O/wCkI76vVZUnCOMgJJDAAbxWoTGqskKAIoHYilMvSBTYgS/m75ttlC1QBju/UExgCxOsEyYtKyuYQpDg1CaHYjMk6Qrt8w4sRLJ13O2XQ+sObJKlkYSMLu5TmNmbLI57wLftmSEtkAzOCNadDTPnFhHG+vWQa0Ut6CC2C+FSgoJOJJbEh8n1Hl4w/lXvJnB5aSF7LDE74Tr4xl7NZyQAEhzkHTU1oW1/aGv8CiWA7s4BrV9X5u0TzKg/MThzDMOfHmeWpBepBLOWzOmmdIuuOeZc3EM3f/HhFyuxV3FAlI4mBc+mn28Bz7ORUaa6Zf4hF2Np4l0EMvqJ9Im3lLMkFUxOTuVJSRk2vWMXZrwRxBKwpioswrnUOWNIRSQqYQ0zEAS+r0NAdA8FiwpTWu9BpE8pDVuPIiMGEYwa8xtarwRMSGSAzpBYua1J03hfPSFbaNq4j0pajsGy25u8VzFpQMSyw0/m84Sq88R4pRUnMmADEXCBU+FGGphTbrUZ3d4ZQrWj666RG1WqZOIDNL2yxft98ous9lKyEJrXQU5eHKLuHByL7/x/7KmbMNshddkVMUAB05D9YN+IrwRZ5WBLMkgKBr2iwHCEnZJZRPKLrytkqxy1DEy241apfRO6z6e3zq8reqcvEaJFEJ/KM89Scyd42sOKhZmLly2ZcZpUSpRdSi6jzMe4oGlqizHFuVZYVREmIvESqCEFSYsBipJiSTEJOXAxJ4rBiTwTsmBDf4cvtdnWKvLOY2/b7EJxHoiJh1PqyjLtMsTJbFTVGv7/AHlCW1WJ9MvQ8xoYyF0XnNkKxS1FtRpzjeXRe9ntYqRLmjPQHry+30hOTGGFGPx5SpsRIhc6SSUk100MGovGWtLL4Jgo3yqL0rDC8bG1Fpbn8p6HToYVzbuT8p8NYzs2kHf95oYtZ4Mb2CwTA5K8SDlkSHz4g9ItBoSMqjxFC/SM/LtU6VRBI5Go/aCZl/AoIWjDShSNeY18PWM3Jp8ha+5fx5VqFXRNSk4ziUa65YhQ8tQ0H37+IgFAAUzEZ00d6At9IVXdaJahhSoAsEkvoBzy6mDp8nGKTCVOTiJCmJFA7UFAPOOsdp9IUGXr+8RISEsSgYWd8wGo4I6ekPJ6+0ShJLBqkCpZwK9M/CPJt2YsLKS3zMe89GHjE7LJIUoBKkkEAhQIH9pOY/SOPk3Cx4lVMABKnr+cQfs0SJaiSSHZgHVk4omtWzycxXdFt7VJAQsAarBS7+AcR1vsJMxCjMCU4ipQxMTR0gjNqjy5wVMtshNO0xPogYvJhARa9WT59JYH0EUeB4g1jsCZZWpBPEXbQNoPODZSFsSpkpfM0AD8/CB7VblgHs5GCjgzKn/bseZOR2hIszJynWpUxWiQ+FP0SImuFnNuZ1swAoQq23oHUiUFLLEY6AV1FMhFFkkYzimzCshqdA3QdYslWIq4VEq/8aO7/crLyh0LtRKQFzymUjPDqeicz1MXMeDwo/3KeTUiAWSyqmkJlpp+fl/Lv1NI6+b5kWNBRLIK8isVIJzCdzz/AMwp+KPjFIBlWcYU5Fu8f6jp0/zGInTVTFFSySdNg+0auHTKg+r9f7mVl1DOeJdeduXOViXl8qdn+sVhTRVHPFq4iXpXFgXApVHqVwQhRXHjwOFx6FRyckQYmkxUkxN4jJy1JiaTFKTExBCWpMTBipJiQME7JqjpaykuCQRkRECY9EcnJqbj+MJssBE0CYjKof78PKNRZrRZbQl0KwHYlvX9Wj5cRHIUpNQog7gtESskGn1C1XQsDhZQ2ND4HIwptNjaiklPUU84zt2/FFolfPiGuh8WofEQ9s3x9LUGmIPUjPxS4/4wtsKt2I1crL0Z0mQkVTU9QX9Mopm2YkulLa0h1Zb6sExuFJP8q0PXqUkf7YIVZ7EoCsxHhM90gjOFNpVjl1LiZ+XZ1fznUCrP1iEuSoFRwqctu3rGlFlsFHnzH/v+seKTdwznLP8Ac31hfyg9Z35pvf8AczosLgApqKu4+hi6VYycNSMLYcL760DnmXhvMvK7JVezmLbdRI9IBtX/AFCs0v8A0bOh9yyj5kuIkNJ7zjasxhJuedONQpQcs74fIMB5wVMuyRJH489KQPkSQ/kKDrGFvb/qDa5jgHCnb9hSMtb7fNml5iyfQeUOTTKIh87GfRr2+O7PJBTZpYfRZZSvDQRg74v20WhWKYs10eFZTHNFhVC9RDMW7nqBFhMQePCqOzknijniAVHrwQnExzxExzwQkgqJYorBjsUEJamJiOjo5JT0ROOjoISYiUdHQTs9TE46OghPFR4Y6OghIKilcdHQCcMrKRFklOxI6FvaOjo7OSZtc0ZTZg/vV+sQVaF/nX/uV+sdHQQlZ31iBjo6CBnpiJjo6CE8jwx0dBOTjEY6OghPYkM46OghPFR4Y6OghOjo6OjsJ//Z" height="250px" width="250px"></img>
+                    </td>
+                </tr>
+                 </table>
+            <br></br>
+            </table>
+            <h1 style="font-size:35px; font-family:Papyrus;"align="center"><u>Desserts</u></h1>
+                <br></br>
+                    <table border="6" width="80%" align="center" style="color: beige;">
+                <thead align="Center">
+                    <th>
+                        <h2 align="center"> S.no </h2>
+                    </th>
+                    <th>
+                        <h2>Name</h2>
+                    </th>
+                    <th>
+                        <h2>Details</h2>
+                    </th>
+                    <th>
+                        <h2>Image</h2>
+                    </th>
+                </thead>
+                <tr align="Center">
+                    <td >
+                       <h2><b>1.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Icecream</h2>
+                    </td>
+                    <td align="center">
+                        <ul >
+                            <li>
+                                <h2><b>i.Death by Chocolate</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.French Vanilla</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Rocky Road</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iv.Tiramisu</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+<img style="width: 250px; height: auto;" src="https://images5.alphacoders.com/717/717597.jpg" alt="h">
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>2.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Puddings</h2>
+                    </td>
+                    <td align="Center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Vanilla</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Chocolate</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Butterscotch</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+<img style="width: 250px; height: auto;" src="https://c4.wallpaperflare.com/wallpaper/284/907/761/candy-caramel-confectionery-cook-wallpaper-preview.jpg" alt="k">
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>3.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Sweets</h2>
+                    </td>
+                    <td align="center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Gulab Jamun</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Rasagulla</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Champakalli</b></h2>
+                            </li>
+                             <li>
+                                <h2><b>iii.Milk Peda</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+<img style="width: 250px; height: auto;" src="https://thumbs.dreamstime.com/b/indian-sweet-rasgulla-famous-bengali-sweet-over-white-background-rasgulla-sweet-food-105733814.jpg" alt="k">
+                    </td>
+                </tr>
+                 <tr align="Center">
+                    <td >
+                       <h2><b>4.</b></h2>
+                    </td>
+                    <td >
+                        <h2>Drinks </h2>
+                    </td>
+                    <td align="Center">
+                        <ul type="circle">
+                            <li>
+                                <h2><b>i.Coke/Sprite</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>ii.Water(Mineral)</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iii.Smoothies</b></h2>
+                            </li>
+                            <li>
+                                <h2><b>iv.Coffee/Tea</b></h2>
+                            </li>
+                        </ul>
+                    </td>
+                    <td >
+<img style="width: 250px; height: auto;" src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlJTIwY3VwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="k">
+                    </td>
+                </tr>
+                 
+            
+            </table>
+          </div>
+          <marquee style="margin-top: 2%; color: white; font-size: 20px;" behavior="alternate" align="center"> Contact us for details about price and availability </marquee>
+    <footer style="background-color:black; height:300px; text-align: center; font-size: 20px;">
+     <p style=" color: white; margin-top: 5%;"><b> Head Office Address :</b> #000, 2nd lane, Some street, <br>        7th stage, some locality, Bangalore<br>Karnataka, India<br><b> Contact :</b> 1234567890 / 26784729424<br>
+     <b>Mail ID :</b> itisarandommailid@gmail.com<br>
+   <b> Follow us :</b><br><a href="https://www.instagram.com"> <img style="width:30px; height:30px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="insta"></a>
+     <br><a href="https://www.facebook.com/?stype=lo&jlou=AfeABX73zr98eHAWo0l9Gb9fyy7crT1jChpE7u5k-HCs19ZCkddqFZSYKkH3OU1i9toF9kjY3Fx5qKfy0nMhrj0PrCq-4GLkQmFYbNiH5BR-WQ&smuh=58581&lh=Ac_oesDW-vVhLAlcAbg"><img style="width:30px; height:30px;" src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-5.png" alt="fb"></a> </p>
+   </footer>
+    </body>
+</html>

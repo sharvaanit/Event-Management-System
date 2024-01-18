@@ -1,0 +1,169 @@
+<html>
+    <style>
+        .mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 80%;
+  max-height: auto;
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin-right: 33%;
+  margin-top: 3%;
+  font-size: 55px;
+}
+
+    .centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-top: 1%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+    <body style="background-color: black;">
+        <div class="container">
+            <img src="https://media2.giphy.com/media/TxVVB6PfWMjE4/giphy.gif?cid=ecf05e47jtgbpzbyv6j0fpb2askv4d9lu3f6dkliistjvpde&rid=giphy.gif&ct=g" alt="Snow" style="width:100%; height: 100%;">
+            
+           <h1> <div class="top-left"><img style="width: 250px; height: 250px; background-color: black;"src="C:\Downloads\logo.png" alt="hmm"></div></h1>
+            <div class="top-right"><em>Event Locations</em></div>
+            
+            <div class="centered"><div class="slideshow-container">
+
+                <div class="mySlides fade">
+            
+                  <img src="https://www.royalorchidhotels.com/Images/slider/08_50_2020_08_50_137.jpg" style="width: 750px; height: auto;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="https://www.hoteldekho.com/api_images/00005454-Tangerine_Grand_copy.jpg" style="width:700px; height: auto;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="https://hojobangalore.com/wp-content/uploads/2019/08/hotel-in-Bangalore-Howard-Johnson-Bengaluru.jpg" style="width:700px; height: auto;">
+                  
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); 
+                }
+                </script>
+                </div><br><br>
+                <p style="font-size: 40px;">
+                    Highlight Locations in Bengaluru<br>
+
+                    1. Lemon Tree Hotel, Ulsoor.<br>
+                    2. Howard Johnson, Hebbal.<br>
+                    3. Royal Orchid, Bangalore.<br>
+                </p>
+          </div>
+          <marquee style="margin-top: 2%; color: white; font-size: 20px;" behavior="alternate" align="center"> Contact us for details about price and availability </marquee>
+    <footer style="background-color:black; height:300px; text-align: center; font-size: 20px;">
+     <p style=" color: white; margin-top: 5%;"><b> Head Office Address :</b> #000, 2nd lane, Some street, <br>        7th stage, some locality, Bangalore<br>Karnataka, India<br><b> Contact :</b> 1234567890 / 26784729424<br>
+     <b>Mail ID :</b> itisarandommailid@gmail.com<br>
+   <b> Follow us :</b><br><a href="https://www.instagram.com"> <img style="width:30px; height:30px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="insta"></a>
+     <br><a href="https://www.facebook.com/?stype=lo&jlou=AfeABX73zr98eHAWo0l9Gb9fyy7crT1jChpE7u5k-HCs19ZCkddqFZSYKkH3OU1i9toF9kjY3Fx5qKfy0nMhrj0PrCq-4GLkQmFYbNiH5BR-WQ&smuh=58581&lh=Ac_oesDW-vVhLAlcAbg"><img style="width:30px; height:30px;" src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-5.png" alt="fb"></a> </p>
+   </footer>
+    </body>
+</html>
